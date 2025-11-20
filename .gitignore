@@ -1,0 +1,227 @@
+# ============================================
+# GITIGNORE - Spotify Dashboard Flask Project
+# ============================================
+
+# ========== CREDENCIAIS E SEGURANÇA ==========
+# NUNCA commitar credenciais do Spotify!
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.json
+config.json
+credentials.json
+
+# Cache de autenticação do Spotify (Spotipy)
+.cache
+.spotifycache
+.spotify_cache
+.cache-*
+.spotify_caches/
+
+# ========== PYTHON ==========
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# ========== FLASK ==========
+instance/
+.webassets-cache
+*.db
+*.sqlite
+*.sqlite3
+
+# Flask session
+flask_session/
+
+# ========== JUPYTER NOTEBOOK ==========
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ========== AMBIENTES VIRTUAIS ==========
+# Virtualenv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+venv*/
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# ========== IDEs E EDITORES ==========
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ========== SISTEMA OPERACIONAL ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========== LOGS E TEMPORÁRIOS ==========
+*.log
+*.log.*
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ========== DADOS E UPLOADS ==========
+# Arquivos de dados que não devem ser versionados
+data/raw/*
+data/processed/*
+data/temp/*
+!data/.gitkeep
+
+# Uploads de usuários
+uploads/*
+!uploads/.gitkeep
+
+# ========== NODE_MODULES (se usar frontend) ==========
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ========== DOCKER ==========
+*.env.docker
+docker-compose.override.yml
+
+# ========== OUTROS ==========
+# Arquivos de backup
+*.backup
+*.old
+
+# Arquivos compactados (se temporários)
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Configurações locais específicas
+local_settings.py
+settings_local.py
+
+# ========== PROJETO ESPECÍFICO ==========
+# Arquivos de teste e desenvolvimento
+test_api.py
+debug.py
+sandbox/
+
+# Dados de exemplo (manter .gitkeep para estrutura)
+data/*.csv
+data/*.json
+!data/README.md
+
+# Prints e screenshots temporários
+screenshots/*.png
+!screenshots/README.md
+
+# Relatórios temporários
+reports/*.pdf
+!reports/README.md
